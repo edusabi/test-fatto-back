@@ -1,10 +1,10 @@
 {
   "name": "back",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "back/app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node back/app.js",
+    "dev": "nodemon back/app.js"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.3",
