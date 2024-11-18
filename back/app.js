@@ -5,6 +5,12 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
+app.use(cors(corsOptions));
+const corsOptions = {
+  origin: 'https://test-fatto.vercel.app/', // Apenas a origem específica
+};
+
+
 const pool = require("./infra/conexao");
 
 app.get("/", async (req, res) => {
