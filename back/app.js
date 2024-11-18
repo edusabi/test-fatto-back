@@ -4,12 +4,7 @@ const cors = require("cors");
 
 app.use(express.json());
 
-app.use(
-  cors({
-    origin: "http://localhost:8080",
-    credentials: true,
-  })
-);
+app.use(cors());
 
 const pool = require("./infra/conexao");
 
